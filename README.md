@@ -65,7 +65,6 @@ sudo docker run -d \
 ```bash
 cd $HOME/cat-token-box/packages/cli
 ```
-- Use the below command to create a config.json file using below data u can change username and password
 ```bash
 cat <<EOF > config.json
 {
@@ -75,8 +74,8 @@ cat <<EOF > config.json
   "maxFeeRate": 30,
   "rpc": {
       "url": "http://127.0.0.1:8332",
-      "username": "ZunXBT",
-      "password": "ZunXBT"
+      "username": "bitcoin",
+      "password": "opcatAwesome"
   }
 }
 EOF
