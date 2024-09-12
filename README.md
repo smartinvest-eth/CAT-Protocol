@@ -119,7 +119,7 @@ dpkg -l | grep -q '^ii  curl ' || sudo apt-get install -y curl && dpkg -l | grep
 ```
 - Use this command to mint with current market fee
 ```bash
-sudo yarn cli mint -i 45ee725c2c5993b3e4d308842d87e973bf1951f5f7a804b21e4dd964ecd12d6b_0 5 --fee-rate $(curl -s https://explorer.unisat.io/fractal-mainnet/api/bitcoin-info/fee | jq '.data.economyFee')
+sudo yarn cli mint -i 45ee725c2c5993b3e4d308842d87e973bf1951f5f7a804b21e4dd964ecd12d6b_0 5 --fee-rate $(curl -s https://explorer.unisat.io/fractal-mainnet/api/bitcoin-info/fee | jq '.data.fastestFee')
 ```
 - You can check balance using this command
 ```bash
